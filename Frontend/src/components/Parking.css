@@ -1,0 +1,44 @@
+.parking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  
+  .seats-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .seat {
+    background-color: #888;
+    border-radius: 5px;
+    width: 100%;
+    padding-bottom: 100%; /* Keeps the square aspect ratio */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+  }
+  
+  .seat.selected {
+    background-color: #00cc66;
+  }
+  
+  .seat.occupied {
+    background-color: #cc0000;
+    cursor: not-allowed;
+  }
+  
+  .seat:hover:not(.occupied):not(.selected) {
+    background-color: #666;
+  }
+  

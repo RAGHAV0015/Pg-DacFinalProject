@@ -1,0 +1,33 @@
+/* SeatSelect.css */
+.seat-select-container {
+    background-color: rgb(213, 234, 188);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .total-count {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .total-count .count {
+    font-weight: bold;
+    color: #6111edec;
+  }
+  
+  .seat.selected {
+    background-color: #00cc66;
+  }
+  
+  .seat.occupied {
+    background-color: #cc0000;
+    cursor: not-allowed;
+  }
+  
+  .seat:hover:not(.occupied):not(.selected) {
+    background-color: #666;
+  }
